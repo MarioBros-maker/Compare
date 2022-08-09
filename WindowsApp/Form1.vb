@@ -1,4 +1,4 @@
-﻿Public Class Form1
+﻿Public Class Main
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         ProgressBar1.Value = 0
         Dim a As Integer
@@ -10,15 +10,15 @@
         If ProgressBar1.Value = 100 Then
             If a > b Then
                 Label6.Show()
-                Label6.Text = "大于"
+                Label6.Text = ">"
             End If
             If a < b Then
                 Label6.Show()
-                Label6.Text = "小于"
+                Label6.Text = "<"
             End If
             If a = b Then
                 Label6.Show()
-                Label6.Text = "等于"
+                Label6.Text = "="
             End If
         End If
     End Sub
@@ -27,7 +27,10 @@
         Label6.Hide()
     End Sub
 
-    Private Sub ProgressBar1_Click(sender As Object, e As EventArgs) Handles ProgressBar1.Click
-
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+        Settings.Show()
+    End Sub
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+        About.Show()
     End Sub
 End Class

@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Form1
+Partial Class Main
     Inherits System.Windows.Forms.Form
 
     'Form 重写 Dispose，以清理组件列表。
@@ -23,7 +23,7 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Main))
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -36,6 +36,10 @@ Partial Class Form1
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TextBox1
@@ -51,7 +55,7 @@ Partial Class Form1
         Me.Label1.BackColor = System.Drawing.SystemColors.Control
         Me.Label1.Font = New System.Drawing.Font("宋体", 20.0!)
         Me.Label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label1.Location = New System.Drawing.Point(24, 32)
+        Me.Label1.Location = New System.Drawing.Point(24, 22)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(174, 27)
         Me.Label1.TabIndex = 1
@@ -71,45 +75,47 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("宋体", 12.0!)
         Me.Label3.ForeColor = System.Drawing.Color.Black
-        Me.Label3.Location = New System.Drawing.Point(257, 101)
+        Me.Label3.Location = New System.Drawing.Point(374, 97)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(17, 12)
+        Me.Label3.Size = New System.Drawing.Size(24, 16)
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "b="
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(280, 96)
+        Me.TextBox2.Location = New System.Drawing.Point(404, 96)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(82, 21)
         Me.TextBox2.TabIndex = 4
         '
         'Button1
         '
+        Me.Button1.Font = New System.Drawing.Font("宋体", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.Black
-        Me.Button1.Location = New System.Drawing.Point(344, 231)
+        Me.Button1.Location = New System.Drawing.Point(377, 206)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(97, 38)
+        Me.Button1.Size = New System.Drawing.Size(120, 57)
         Me.Button1.TabIndex = 5
         Me.Button1.Text = "比较"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'ProgressBar1
         '
-        Me.ProgressBar1.Location = New System.Drawing.Point(56, 143)
+        Me.ProgressBar1.Location = New System.Drawing.Point(29, 152)
         Me.ProgressBar1.Name = "ProgressBar1"
-        Me.ProgressBar1.Size = New System.Drawing.Size(349, 22)
+        Me.ProgressBar1.Size = New System.Drawing.Size(483, 22)
         Me.ProgressBar1.TabIndex = 6
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("宋体", 12.0!)
+        Me.Label4.Font = New System.Drawing.Font("宋体", 16.0!)
         Me.Label4.ForeColor = System.Drawing.Color.Black
-        Me.Label4.Location = New System.Drawing.Point(44, 206)
+        Me.Label4.Location = New System.Drawing.Point(26, 206)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(80, 16)
+        Me.Label4.Size = New System.Drawing.Size(109, 22)
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "经鉴定，a"
         '
@@ -125,32 +131,53 @@ Partial Class Form1
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("宋体", 12.0!)
+        Me.Label6.Font = New System.Drawing.Font("宋体", 15.0!)
         Me.Label6.ForeColor = System.Drawing.Color.Blue
-        Me.Label6.Location = New System.Drawing.Point(130, 206)
+        Me.Label6.Location = New System.Drawing.Point(144, 207)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(56, 16)
+        Me.Label6.Size = New System.Drawing.Size(19, 20)
         Me.Label6.TabIndex = 9
-        Me.Label6.Text = "Label6"
+        Me.Label6.Text = "."
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("宋体", 12.0!)
+        Me.Label7.Font = New System.Drawing.Font("宋体", 15.0!)
         Me.Label7.ForeColor = System.Drawing.Color.Black
         Me.Label7.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Label7.Location = New System.Drawing.Point(182, 206)
+        Me.Label7.Location = New System.Drawing.Point(179, 208)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(16, 16)
+        Me.Label7.Size = New System.Drawing.Size(19, 20)
         Me.Label7.TabIndex = 10
         Me.Label7.Text = "b"
         '
-        'Form1
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.SystemColors.Control
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(404, 22)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(48, 47)
+        Me.PictureBox1.TabIndex = 11
+        Me.PictureBox1.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(472, 22)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(51, 47)
+        Me.PictureBox2.TabIndex = 12
+        Me.PictureBox2.TabStop = False
+        '
+        'Main
         '
         Me.AcceptButton = Me.Button1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(464, 300)
+        Me.ClientSize = New System.Drawing.Size(535, 289)
+        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
@@ -164,11 +191,14 @@ Partial Class Form1
         Me.Controls.Add(Me.TextBox1)
         Me.Cursor = System.Windows.Forms.Cursors.Default
         Me.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
-        Me.Name = "Form1"
+        Me.Name = "Main"
         Me.Text = "比较程序"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -186,4 +216,6 @@ Partial Class Form1
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents PictureBox2 As PictureBox
 End Class
