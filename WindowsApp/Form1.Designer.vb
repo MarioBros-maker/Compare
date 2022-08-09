@@ -147,6 +147,7 @@ Partial Class Form1
         '
         'Form1
         '
+        Me.AcceptButton = Me.Button1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(464, 300)
@@ -163,6 +164,8 @@ Partial Class Form1
         Me.Controls.Add(Me.TextBox1)
         Me.Cursor = System.Windows.Forms.Cursors.Default
         Me.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "Form1"
         Me.Text = "比较程序"
         Me.ResumeLayout(False)
