@@ -14,11 +14,14 @@
         Label1.Text = "语言"
         WindowsApp.Main.Text = "比较程序"
         WindowsApp.Main.Label1.Text = "请输入数字："
-        WindowsApp.Main.Label4.Text = "经鉴定，a"
+        WindowsApp.Main.Label4.Text = "我认为，a"
         WindowsApp.Main.Button1.Text = "比较"
         WindowsApp.About.Text = "关于"
         WindowsApp.About.Label1.Text = "比较程序"
         WindowsApp.About.Label2.Text = "作者：Miriao"
+        WindowsApp.Help.Label1.Text = "这个程序是我花半个小时完成的，真的几乎没有一点技术含量。由于VB的特性（自己水平不足）导致"
+        WindowsApp.Help.Label3.Text = "在比较小数的时候会进行四舍五入，因此会出现类似于114.5=114.6的情况......"
+        WindowsApp.Help.Label2.Text = "但我已经满意了（逃" '通过手工改变字符来达到切换语言的效果'
     End Sub
 
     Private Sub RadioButton2_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton2.CheckedChanged
@@ -33,5 +36,8 @@
         WindowsApp.About.Button1.Text = "OK"
         WindowsApp.About.Label1.Text = "Compare"
         WindowsApp.About.Label2.Text = "Author:Miriao"
+        WindowsApp.Help.Label1.Text = "This program is finished in about half an hour.Because of I Dim a As Integer,"
+        WindowsApp.Help.Label3.Text = "so something like 114.5=114.6 can occur.But I am very satisfied with it."
+        WindowsApp.Help.Label2.Text = "Really."
     End Sub
 End Class
