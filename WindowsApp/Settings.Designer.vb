@@ -27,6 +27,9 @@ Partial Class Settings
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton4 = New System.Windows.Forms.RadioButton()
         Me.SuspendLayout()
         '
         'Label1
@@ -73,11 +76,48 @@ Partial Class Settings
         Me.Button1.Text = "完成"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("宋体", 18.0!)
+        Me.Label2.Location = New System.Drawing.Point(12, 83)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(58, 24)
+        Me.Label2.TabIndex = 4
+        Me.Label2.Text = "皮肤"
+        '
+        'RadioButton3
+        '
+        Me.RadioButton3.AutoSize = True
+        Me.RadioButton3.Font = New System.Drawing.Font("宋体", 13.0!)
+        Me.RadioButton3.Location = New System.Drawing.Point(16, 124)
+        Me.RadioButton3.Name = "RadioButton3"
+        Me.RadioButton3.Size = New System.Drawing.Size(62, 22)
+        Me.RadioButton3.TabIndex = 5
+        Me.RadioButton3.TabStop = True
+        Me.RadioButton3.Text = "原版"
+        Me.RadioButton3.UseVisualStyleBackColor = True
+        '
+        'RadioButton4
+        '
+        Me.RadioButton4.AutoSize = True
+        Me.RadioButton4.Font = New System.Drawing.Font("宋体", 13.0!)
+        Me.RadioButton4.Location = New System.Drawing.Point(117, 124)
+        Me.RadioButton4.Name = "RadioButton4"
+        Me.RadioButton4.Size = New System.Drawing.Size(98, 22)
+        Me.RadioButton4.TabIndex = 6
+        Me.RadioButton4.TabStop = True
+        Me.RadioButton4.Text = "Material"
+        Me.RadioButton4.UseVisualStyleBackColor = True
+        '
         'Settings
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(351, 249)
+        Me.Controls.Add(Me.RadioButton4)
+        Me.Controls.Add(Me.RadioButton3)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.RadioButton2)
         Me.Controls.Add(Me.RadioButton1)
@@ -97,4 +137,7 @@ Partial Class Settings
     Friend WithEvents RadioButton1 As RadioButton
     Friend WithEvents RadioButton2 As RadioButton
     Friend WithEvents Button1 As Button
+    Friend WithEvents Label2 As Label
+    Friend WithEvents RadioButton3 As RadioButton
+    Friend WithEvents RadioButton4 As RadioButton
 End Class

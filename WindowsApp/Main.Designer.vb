@@ -30,7 +30,6 @@ Partial Class Main
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -46,7 +45,7 @@ Partial Class Main
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(80, 96)
+        Me.TextBox1.Location = New System.Drawing.Point(121, 96)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(78, 21)
         Me.TextBox1.TabIndex = 0
@@ -55,11 +54,11 @@ Partial Class Main
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("宋体", 20.0!)
+        Me.Label1.Font = New System.Drawing.Font("楷体", 24.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label1.Location = New System.Drawing.Point(25, 22)
+        Me.Label1.Location = New System.Drawing.Point(23, 22)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(174, 27)
+        Me.Label1.Size = New System.Drawing.Size(225, 33)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "请输入数字："
         '
@@ -67,11 +66,11 @@ Partial Class Main
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("宋体", 10.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label2.Font = New System.Drawing.Font("宋体", 15.0!)
         Me.Label2.ForeColor = System.Drawing.Color.Black
-        Me.Label2.Location = New System.Drawing.Point(53, 97)
+        Me.Label2.Location = New System.Drawing.Point(86, 96)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(21, 14)
+        Me.Label2.Size = New System.Drawing.Size(29, 20)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "a="
         '
@@ -79,11 +78,11 @@ Partial Class Main
         '
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("宋体", 12.0!)
+        Me.Label3.Font = New System.Drawing.Font("宋体", 15.0!)
         Me.Label3.ForeColor = System.Drawing.Color.Black
-        Me.Label3.Location = New System.Drawing.Point(374, 97)
+        Me.Label3.Location = New System.Drawing.Point(369, 96)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(24, 16)
+        Me.Label3.Size = New System.Drawing.Size(29, 20)
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "b="
         '
@@ -98,19 +97,12 @@ Partial Class Main
         '
         Me.Button1.Font = New System.Drawing.Font("宋体", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.Black
-        Me.Button1.Location = New System.Drawing.Point(377, 208)
+        Me.Button1.Location = New System.Drawing.Point(373, 180)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(120, 57)
         Me.Button1.TabIndex = 5
         Me.Button1.Text = "比较"
         Me.Button1.UseVisualStyleBackColor = True
-        '
-        'ProgressBar1
-        '
-        Me.ProgressBar1.Location = New System.Drawing.Point(29, 152)
-        Me.ProgressBar1.Name = "ProgressBar1"
-        Me.ProgressBar1.Size = New System.Drawing.Size(483, 22)
-        Me.ProgressBar1.TabIndex = 6
         '
         'Label4
         '
@@ -118,7 +110,7 @@ Partial Class Main
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("宋体", 16.0!)
         Me.Label4.ForeColor = System.Drawing.Color.Black
-        Me.Label4.Location = New System.Drawing.Point(25, 221)
+        Me.Label4.Location = New System.Drawing.Point(25, 180)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(109, 22)
         Me.Label4.TabIndex = 7
@@ -137,11 +129,11 @@ Partial Class Main
         '
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.Color.Transparent
-        Me.Label6.Font = New System.Drawing.Font("宋体", 15.0!)
-        Me.Label6.ForeColor = System.Drawing.Color.Blue
-        Me.Label6.Location = New System.Drawing.Point(144, 223)
+        Me.Label6.Font = New System.Drawing.Font("宋体", 18.0!)
+        Me.Label6.ForeColor = System.Drawing.Color.Linen
+        Me.Label6.Location = New System.Drawing.Point(140, 180)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(19, 20)
+        Me.Label6.Size = New System.Drawing.Size(22, 24)
         Me.Label6.TabIndex = 9
         Me.Label6.Text = "."
         '
@@ -152,11 +144,16 @@ Partial Class Main
         Me.Label7.Font = New System.Drawing.Font("宋体", 15.0!)
         Me.Label7.ForeColor = System.Drawing.Color.Black
         Me.Label7.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Label7.Location = New System.Drawing.Point(180, 222)
+        Me.Label7.Location = New System.Drawing.Point(168, 182)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(19, 20)
         Me.Label7.TabIndex = 10
         Me.Label7.Text = "b"
+        '
+        'Timer1
+        '
+        Me.Timer1.Enabled = True
+        Me.Timer1.Interval = 500
         '
         'PictureBox1
         '
@@ -195,7 +192,7 @@ Partial Class Main
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(563, 330)
+        Me.ClientSize = New System.Drawing.Size(559, 307)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
@@ -203,7 +200,6 @@ Partial Class Main
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.ProgressBar1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.Label3)
@@ -232,7 +228,6 @@ Partial Class Main
     Friend WithEvents Label3 As Label
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Button1 As Button
-    Friend WithEvents ProgressBar1 As ProgressBar
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
