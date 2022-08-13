@@ -37,7 +37,7 @@ Partial Class Help
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(889, 19)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "这个程序是我花半个小时完成的，真的几乎没有一点技术含量。由于VB的特性（自己水平不足）导致"
+        Me.Label1.Text = "这个程序是我花半个小时完成的，没有一点技术含量，"
         '
         'Label2
         '
@@ -57,7 +57,7 @@ Partial Class Help
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(719, 19)
         Me.Label3.TabIndex = 2
-        Me.Label3.Text = "在比较小数的时候会进行四舍五入，因此会出现类似于114.5=114.6的情况......"
+        Me.Label3.Text = "并且实用性基本为0，（就算是做着玩儿的）"
         '
         'Button1
         '

@@ -19,11 +19,11 @@
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles Me.Load
-        Label6.Hide()
+        Label6.Hide() '打开时隐藏符号'
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-        Settings.Show()
+        Settings.Show() '点击图标，显示对应窗口，下同'
     End Sub
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
         About.Show()
